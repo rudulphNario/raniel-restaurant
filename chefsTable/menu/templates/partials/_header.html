@@ -1,0 +1,15 @@
+{% load static %}
+<header>
+    <img src="{% static 'img/logo.png' %}" alt="logo">
+    <h1 style="text-align: center;">Welcome to Raniel's Restaurant</h1><br/>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'menu' %}">Menu</a></li>
+        <li><a href="{% url 'book' %}">Book</a></li>
+        <li><a href="{% url 'contact'%}">Contact</a></li>
+      </ul>  
+</nav>
